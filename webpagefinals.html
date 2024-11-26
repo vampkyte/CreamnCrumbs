@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cream n' Crumbs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Delius+Unicase:wght@400;700&family=Henny+Penny&family=Yellowtail&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #4d4d4d;
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: url('pastryshopbackground.jpg') no-repeat center/cover;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 100px;
+            font-family: "Yellowtail", 'cursive';
+            font-weight: 400;
+            font-style: normal;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(181, 212, 214, 0.863);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            font-size: 1rem;
+            font-family: "Delius Unicase", 'cursive';
+            font-weight: 700;
+            font-style: normal;
+            color: #000000a6;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #81b1d8;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 40px 20px;
+        }
+        h2 {
+            text-align: center;
+            font-family: "Delius Unicase", 'cursive';
+            font-weight: 700;
+            font-style: normal;
+            font-size: 43px;
+            margin-bottom: 20px;
+            color: #000000a6;
+        }
+        h4 {
+            text-align: center;
+            font-family: "Delius Unicase", 'cursive';
+            font-weight: 400;
+            font-style: normal;
+            font-size: 27px;
+            margin-bottom: 20px;
+            color: #000000a6;
+        }
+       
+        .menu-items {
+            display:flex;
+            flex-wrap:wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .menu-item {
+            background-color: #a4c9da83;
+            border: 2px dashed #9fbec7;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .menu-item h3 {
+            font-size: 1.2rem;
+            font-family: "Delius Swash Caps", cursive;
+            font-weight: 700;
+            font-style: normal;
+            margin-bottom: 10px;
+            color: #1b2425;
+        }
+        .menu-item p {
+            font-size: 0.9rem;
+
+            color: #555;
+        }
+        .menu-item strong {
+            color: #1d1d1d;
+        }
+
+        .menu-item button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #2a9172;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .menu-item button:hover {
+            background-color: #048815;
+        }
+
+        .menu-item img {
+            width:100%;
+            height:300px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .about p, .contact p {
+            text-align:center;
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            background-color: #99cece;
+            padding: 20px 0;
+            margin-top: 20px;
+            color: #000000a6;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1><spa style ='color: #1ca77d;'>Cream</spa> n' <spa style ='color: #1c74a7;'>Crumbs</spa></h1>
+        <p>Creamy Delights, Crumbly Perfection.</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="menu">
+        <h2>Menu</h2>
+        <h4>Premium Cookies</h4>
+        <div class="menu-items">
+
+            <div class="menu-item">
+                <img src="chococookie.png" alt="Chocolate Cookies">
+                <h3>Oat Chocolate Cookies</h3>
+                <p>3 Pieces</p>
+                <p><b>Golden-brown treat with a filled melted chocolate.</b></p>
+                <strong>₱85</strong>
+                <div><button>Order</button></div>
+                
+            </div>
+            <div class="menu-item">
+                <img src="crunchybiscoff.png" alt="Cruncy Biscoff Cookies">
+                <h3>Crunchy Biscoff Cookies</h3>
+                <p>3 Pieces</p>
+                <p><b>Golden-brown caramelized biscoff flavor.</b></p>
+                <strong>₱129</strong>
+                <div><button>Order</button></div>
+            </div>
+            <div class="menu-item">
+                <img src="doublextreme.png" alt="DoubleXtreme">
+                <h3>Double Xtreme Chocolate Cookie</h3>
+                <p>3 Pieces</p>
+                <p><b>A rich, fudgy cookie with cocoa and chunks of chocolate.</b></p>
+                <strong>₱120</strong>
+                <div><button>Order</button></div>
+            </div>
+            <div class="menu-item">
+                <img src="strawberrycookie.png" alt="strawberrycookie">
+                <h3>Strawberries n' Cream Cookies</h3>
+                <p>3 Pieces</p>
+                <p><b>A soft, chewy cookie with a sweet blend of strawberry and vanilla flavors.</b></p>
+                <strong>₱120</strong>
+                <div><button>Order</button></div>
+            </div>
+            <div class="menu-item">
+                <img src= "redvelvet.png" alt="redvelvet">
+                <h3>Oreo Red Velvet Cookie</h3>
+                <p>3 Pieces</p>
+                <p><b>A soft red velvet cookie with a creamy Oreo filling, offering a rich, tangy flavor.</b></p>
+                <strong>₱120</strong>
+                <div><button>Order</button></div>
+            </div> 
+            <div class="menu-item">
+                <img src= "matcha.png" alt="matchaiw">
+                <h3>Matcha Flavored Cookie</h3>
+                <p>3 Pieces</p>
+                <p><b>Chewy cookie with a subtle earthy matcha flavor.</b></p>
+                <strong>₱120</strong>
+                <div><button>Order</button></div>
+            </div>  
+        </div>
+        <section id="menu">
+            <h4>Drinks</h4>
+            <div id="menu-items">
+                <div class="menu-item">
+                    <img src= "matcha.png" alt="matchaiw">
+                    <h3>Matcha Flavored Cookie</h3>
+                    <p>3 Pieces</p>
+                    <p><b>Chewy cookie with a subtle earthy matcha flavor.</b></p>
+                    <strong>₱120</strong>
+                    <div><button>Order</button></div>
+                </div>  
+
+            </div>
+        </section>
+        <section id="menu">
+            <h4>Cakes</h4>
+            <div id="menu-items">
+                <div class="menu-item">
+                    <img src= "matcha.png" alt="matchaiw">
+                    <h3>Matcha Flavored Cookie</h3>
+                    <p>3 Pieces</p>
+                    <p><b>Chewy cookie with a subtle earthy matcha flavor.</b></p>
+                    <strong>₱120</strong>
+                    <div><button>Order</button></div>
+                </div>  
+            </div>
+        </section>
+        <section id="menu">
+            <h4>Combos</h4>
+            <div id="menu-items">
+                <div class="menu-item">
+                    <img src= "matcha.png" alt="matchaiw">
+                    <h3>Matcha Flavored Cookie</h3>
+                    <p>3 Pieces</p>
+                    <p><b>Chewy cookie with a subtle earthy matcha flavor.</b></p>
+                    <strong>₱120</strong>
+                    <div><button>Order</button></div>
+                </div>  
+
+            </div>
+        </section>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>titeiteitietietiet eitieitei about nigga tite</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> 123 Sweet Lane, Pastryville</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> hello@burat.com</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Cream n' Crumbs.</p>
+    </footer>
+</body>
+</html>
+
